@@ -1,0 +1,62 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "6615000000005076",
+      "name": "ProjectEriyuthu",
+      "domain": {
+        "id": "50018969758",
+        "name": "projecteriyuthu-60028881434.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60028881434",
+          "name": "Development",
+          "type": 3,
+          "env_status": "Active",
+          "project_details": {
+            "project_name": "ProjectEriyuthu",
+            "id": "6615000000005076",
+            "project_type": "Live"
+          },
+          "is_default": false,
+          "action_required": false
+        },
+        {
+          "idx": 2,
+          "id": "50018969785",
+          "name": "Production",
+          "type": 1,
+          "env_status": "Active",
+          "project_details": {
+            "project_name": "ProjectEriyuthu",
+            "id": "6615000000005076",
+            "project_type": "Live"
+          },
+          "is_default": true,
+          "clone_env_id": "60028881434",
+          "migrated_services": {
+            "migrated_services": [
+              "Settings",
+              "Cloud Scale",
+              "Serverless",
+              "DevOps"
+            ],
+            "is_catalyst_migrated": true
+          },
+          "action_required": false
+        }
+      ]
+    }
+  ]
+}

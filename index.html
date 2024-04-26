@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Menu -->
+            <div class="col-md-2">
+              <h4 class="edm_title">Eriyudhu di maala</h4>
+                <ul class="nav flex-column nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="dashboard-tab" data-toggle="tab" href="#dashboard" role="tab"
+                            aria-controls="dashboard" aria-selected="true">
+                            <i class="fas fa-trophy"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="schedule-tab" data-toggle="tab" href="#schedule" role="tab"
+                            aria-controls="schedule" aria-selected="false">
+                            <i class="fas fa-calendar-alt"></i> Schedule
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="stats-tab" data-toggle="tab" href="#stats" role="tab"
+                            aria-controls="stats" aria-selected="false">
+                            <i class="fas fa-chart-bar"></i> Stats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="teams-tab" data-toggle="tab" href="#teams" role="tab"
+                            aria-controls="teams" aria-selected="false">
+                            <i class="fas fa-users"></i> Teams
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="players-tab" data-toggle="tab" href="#players" role="tab"
+                            aria-controls="players" aria-selected="false">
+                            <i class="fas fa-user"></i> Players
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab"
+                            aria-controls="settings" aria-selected="false">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Right Panel -->
+            <div class="col-md-10 right-panel">
+                <!-- Tab content -->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="dashboard" role="tabpanel"
+                        aria-labelledby="dashboard-tab">
+                        <h2 class="text-center mt-5">Dashboard Content</h2>
+                    </div>
+                    <div class="tab-pane fade" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">
+                        <h2 class="text-center mt-5">Schedule Content</h2>
+                    </div>
+                    <div class="tab-pane fade" id="stats" role="tabpanel" aria-labelledby="stats-tab">
+                        <h2 class="text-center mt-5">Stats Content</h2>
+                    </div>
+                    <div class="tab-pane fade" id="teams" role="tabpanel" aria-labelledby="teams-tab">
+                        <h2 class="text-center mt-5">Teams Content</h2>
+                    </div>
+                    <div class="tab-pane fade" id="players" role="tabpanel" aria-labelledby="players-tab">
+                        <h2 class="text-center mt-5">Players Content</h2>
+                    </div>
+                    <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                        <h2 class="text-center mt-5">Settings Content</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
