@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(!image.src.includes("sun.png")) {
           image.src = "assets/images/sun.png"
         }
+        document.querySelector('.title').style.color = "#333"
       } else if (totalSeconds > endOfDayInSeconds) {
         // From 6 PM to 6 AM (next day)
         progress = (totalSeconds - endOfDayInSeconds) / cycleDurationInSeconds;
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(!image.src.includes("moon.png")) {
           image.src = "assets/images/moon.png"
         }
+        document.querySelector('.title').style.color = "white";
       } else {
         // Before 6 AM
         progress = (totalSeconds + (24 * 3600 - endOfDayInSeconds)) / cycleDurationInSeconds;
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if(!image.src.includes("moon.png")) {
           image.src = "assets/images/moon.png"
         }
+        document.querySelector('.title').style.color = "white";
       }
 
       progress = Math.min(1, Math.max(0, progress));
