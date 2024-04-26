@@ -1,6 +1,6 @@
 {
     "name": "project-eriyuthu",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "homepage": "index.html",
     "login_redirect":"home.html"
 }

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const image = document.getElementById('moving-image');
-  const container = document.getElementById('container');
+  const container = document.querySelector('.background')
 
   function positionImage() {
       const now = new Date();
@@ -20,23 +20,23 @@ document.addEventListener('DOMContentLoaded', function() {
       if (totalSeconds >= startOfDayInSeconds && totalSeconds <= endOfDayInSeconds) {
         // From 6 AM to 6 PM
         progress = (totalSeconds - startOfDayInSeconds) / cycleDurationInSeconds;
-        document.body.style.backgroundImage = "url('assets/images/sun_bg_2.jpeg')";
+        container.style.backgroundImage = "url('assets/images/sun_bg_2.jpeg')";
         if(!image.src.includes("sun.png")) {
-          image.src = "sun.png"
+          image.src = "assets/images/sun.png"
         }
       } else if (totalSeconds > endOfDayInSeconds) {
         // From 6 PM to 6 AM (next day)
         progress = (totalSeconds - endOfDayInSeconds) / cycleDurationInSeconds;
-        document.body.style.background = "url('assets/images/moon_bg.jpeg')";
+        container.style.backgroundImage = "url('assets/images/moon_bg.jpeg')";
         if(!image.src.includes("moon.png")) {
-          image.src = "moon.png"
+          image.src = "assets/images/moon.png"
         }
       } else {
         // Before 6 AM
         progress = (totalSeconds + (24 * 3600 - endOfDayInSeconds)) / cycleDurationInSeconds;
-        document.body.style.background = "url('assets/images/moon_bg.jpeg')";
+        container.style.backgroundImage = "url('assets/images/moon_bg.jpeg')";
         if(!image.src.includes("moon.png")) {
-          image.src = "moon.png"
+          image.src = "assets/images/moon.png"
         }
       }
 
@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
 
+  // window.x = positionImage;
   setInterval(positionImage, 1000); // Update position every second
   positionImage(); // Initial position set
 });
